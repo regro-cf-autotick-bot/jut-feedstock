@@ -19,14 +19,14 @@ build:
 requirements:
   host:
     - pip
-    - poetry-core >=1.0.0,<2
+    - poetry-core >=1.0.0
     - python {{ python_min }}
   run:
-    - click ==7.1.2
-    - nbformat ==5.1.2
-    - pydantic ==1.8.1
-    - python >={{ python_min }},<4.0
-    - rich ==9.13.0
+    - python >={{ python_min }}
+    - nbformat >=5.1.2,<6.0.0
+    - click >=7.1.2,<8.0.0
+    - rich >=9.13.0,<10.0.0
+    - pydantic >=1.8.1,<2.0.0   
 
 test:
   imports:
