@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - poetry-core >=1.0.0
+    - poetry-core >=1.0.0,<2
     - python {{ python_min }}
   run:
     - click ==7.1.2
